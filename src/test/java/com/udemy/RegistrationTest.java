@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 import java.io.File;
 
 
-public class LoginTest {
+public class RegistrationTest {
 
-    @Test(description = "Login with valid credential")
-    public void loginWithValidCredentials() {
+    @Test(description = "Registration with valid credential")
+    public void registrationWithValidCredentials() {
         File chromeDriver = new File("src/main/resources/chromedriver.exe");
         ChromeDriverService chromeService = new ChromeDriverService.Builder()
                 .usingDriverExecutable(chromeDriver)
@@ -26,28 +26,33 @@ public class LoginTest {
         driver.get("https://www.udemy.com/");
         pause(4000);
 
-        WebElement loginPopUpBtn = driver.findElement(
+        WebElement signUpBtn = driver.findElement(
                 By.xpath(" //button[@data-purpose='header-signup']"));
-        loginPopUpBtn.click();
+        signUpBtn.click();
         pause(5000);
 
-        WebElement fullName = driver.findElement(By.id("id_fullname"));
+        WebElement fullName = driver.findElement(
+                By.id("id_fullname"));
         fullName.sendKeys("Test Testson");
         pause(1000);
 
-        WebElement emailField = driver.findElement(By.xpath("//input[@data-purpose='email']"));
-        emailField.sendKeys("franceska.mumina@andsee.org");
+        WebElement emailField = driver.findElement(
+                By.xpath("//input[@data-purpose='email']"));
+        emailField.sendKeys("newEmail"+ System.currentTimeMillis() + "@ukr.net");
         pause(1000);
 
-        WebElement passField = driver.findElement(By.xpath("//input[@data-purpose='password']"));
+        WebElement passField = driver.findElement(
+                By.xpath("//input[@data-purpose='password']"));
         passField.sendKeys("Qwerty1234");
         pause(1000);
 
-        WebElement subBtn = driver.findElement(By.id("submit-id-submit"));
-        subBtn.click();
+        WebElement submitBtn = driver.findElement(
+                By.id("submit-id-submit"));
+        submitBtn.click();
         pause(5000);
 
-        WebElement profileInitial = driver.findElement(By.xpath("//span[@class='user-initials']"));
+        WebElement profileInitial = driver.findElement(
+                By.xpath("//span[@class='user-initials']"));
         Assert.assertEquals(profileInitial.getText(), "TT");
 
         pause(5000);
