@@ -10,4 +10,13 @@
             </class>
         </classes>
     </test>
+    <test name="Login tests">
+        <classes>
+            <class name="com.udemy.LoginTest">
+                <methods>
+                    <include name="loginWithUsingCookie"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

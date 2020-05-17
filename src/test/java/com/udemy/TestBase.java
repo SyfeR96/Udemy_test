@@ -9,7 +9,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
-import java.net.CookieHandler;
 
 public class TestBase {
 
@@ -19,19 +18,21 @@ public class TestBase {
 
     @BeforeMethod(description = "Open Browser")
     public void openBrowser() {
+
         File chromeDriver = new File("src/main/resources/chromedriver.exe");
+
         ChromeDriverService chromeService = new ChromeDriverService.Builder()
                 .usingDriverExecutable(chromeDriver)
                 .usingAnyFreePort()
                 .build();
 
-        cookie = new Cookie.Builder("dj_session_id", "peszsbkrae61wgzuimoycj818zo2xg2p")
+        cookie = new Cookie.Builder("dj_session_id", "ccmgxmwoxtysnxstjxyvzb3mcygkcc5y")
                 .domain("www.udemy.com")
                 .path("/")
                 .build();
 
         driver = new ChromeDriver(chromeService);
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 10);
     }
 
     @AfterMethod(description = "Close Browser")

@@ -20,6 +20,9 @@ public class RegistrationTest extends TestBase {
 
         driver.get("https://www.udemy.com/");
 
+        driver.manage().deleteAllCookies();
+        driver.navigate().refresh();
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(signUpBtnLocator));
         WebElement signUpBtn = driver.findElement(signUpBtnLocator);
         signUpBtn.click();
@@ -35,17 +38,16 @@ public class RegistrationTest extends TestBase {
 
         WebElement passField = driver.findElement(passFieldLocator);
         passField.sendKeys("Qwerty1234");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(submitBtnLocator));
 
+        wait.until(ExpectedConditions.elementToBeClickable(submitBtnLocator));
         WebElement submitBtn = driver.findElement(submitBtnLocator);
         submitBtn.click();
         wait.until(ExpectedConditions.elementToBeClickable(profileInitialLocator));
 
         WebElement profileInitial = driver.findElement(profileInitialLocator);
-        wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(profileInitial, "Test Testson")));
+        wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(profileInitial, "BB")));
         Assert.assertEquals(profileInitial.getText(), "TT");
-
-        driver.quit();
+        
     }
 
     private void pause (int milis) {
