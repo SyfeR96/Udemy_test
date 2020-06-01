@@ -1,8 +1,35 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.657 s <<< FAILURE! - in TestSuite
-com.udemy.LoginTest.loginWithUsingCookie  Time elapsed: 4.205 s  <<< FAILURE!
-java.lang.AssertionError: expected [Test] but found [Test Testson]
-	at com.udemy.LoginTest.loginWithUsingCookie(LoginTest.java:34)
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 55.181 s <<< FAILURE! - in TestSuite
+com.udemy.RegistrationTest.registrationWithValidCredentials  Time elapsed: 20.544 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5989GJV', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SyfeR\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4f428e54751cc095cc65e687c9be2bd2
+*** Element info: {Using=xpath, value=//*[@data-purpose='header-signup']}
+	at com.udemy.RegistrationTest.registrationWithValidCredentials(RegistrationTest.java:13)
+
+com.udemy.LoginTest.loginWithUsingCookie  Time elapsed: 2.821 s  <<< FAILURE!
+java.lang.AssertionError: expected [Jacob] but found [Test Testson]
+	at com.udemy.LoginTest.loginWithUsingCookie(LoginTest.java:17)
+
+com.udemy.CategoriesMenuTest.getCategories  Time elapsed: 13.916 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@data-purpose='browse-courses-link'] (tried for 10 second(s) with 500 milliseconds interval)
+	at com.udemy.CategoriesMenuTest.getCategories(CategoriesMenuTest.java:13)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@data-purpose='browse-courses-link']"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5989GJV', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SyfeR\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 75c5a474b9ee4ef53837f536b16547ba
+*** Element info: {Using=xpath, value=//a[@data-purpose='browse-courses-link']}
+	at com.udemy.CategoriesMenuTest.getCategories(CategoriesMenuTest.java:13)
 

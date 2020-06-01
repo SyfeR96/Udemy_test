@@ -19,4 +19,22 @@
             </class>
         </classes>
     </test>
+    <test name="Categories Menu Test">
+        <classes>
+            <class name="com.udemy.CategoriesMenuTest">
+                <methods>
+                    <include name="getCategories"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Search Test">
+        <classes>
+            <class name="com.udemy.SearchTest">
+                <methods>
+                    <include name="Search"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
