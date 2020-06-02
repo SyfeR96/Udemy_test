@@ -3,7 +3,6 @@ package com.udemy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
 public class RegistrationTest extends TestBase {
 
     @Test(description = "Registration with valid credential")
@@ -11,7 +10,7 @@ public class RegistrationTest extends TestBase {
 
         homePage.openHomePage();
         registrationPopup.openRegisterPopup();
-        Assert.assertEquals(registrationPopup.checkRegisterHeader(), "Зарегистрируйтесь и начните обучение!");
+        Assert.assertEquals(registrationPopup.checkRegisterHeader(), "Sign Up and Start Learning!");
         registrationPopup.enterName("Jacob");
         registrationPopup.enterEmail(utils.getEmailForRegistration());
         registrationPopup.enterPassword("Qwerty1234");

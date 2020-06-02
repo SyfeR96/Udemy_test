@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
             this.wait = wait;
         }
 
-        By logInBtnLocator = By.xpath("//*[@data-purpose='header-login']");
+        By logInBtnLocator = By.xpath("//*[@data-purpose='header-login' or @class='udlite-btn udlite-btn-small udlite-btn-secondary udlite-heading-sm']");
         By userNameLocator = By.xpath("//*[@class='text-midnight ellipsis']");
 
         public String checkLogInBtn() {

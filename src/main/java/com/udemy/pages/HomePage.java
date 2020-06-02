@@ -20,14 +20,12 @@ public class HomePage {
         this.wait = wait;
     }
 
-    By userProfileLocator = By.xpath("//*[@data-purpose='user-dropdown']");
-    By logoutBtnLocator = By.xpath("//*[@data-purpose='do-logout']");
-    By searchFieldLocator = By.xpath("//*[@data-purpose='home-quick-search-box']");
-    By searchFieldBtnLocator = By.xpath("//*[@data-purpose='home-search-button']");
-    By categoriesDropdownLocator = By.xpath("//a[@data-purpose='browse-courses-link']");
-    By mainCategoryLocator = By.xpath("//ul[@class='udlite-block-list list-menu--section--BZ3j9']");
-//    By lastCategoryLocator = By.xpath("(//ul[@class='dropdown-menu' and @aria-labelledby='header.browse']//span[@class='fx'])[13]");
-//    String categoriesTemplateXpath = "(//ul[@class='dropdown-menu' and @aria-labelledby='header.browse']//span[@class='fx'])";
+    By userProfileLocator = By.xpath("//*[@data-purpose='user-dropdown' or @class='header--gap-xxs--2u1SO list-menu--list-menu--1IWp4 popover--popover--t3rNO popover--popover-hover--14ngr']");
+    By logoutBtnLocator = By.xpath("//*[@data-purpose='do-logout' or contains(text(),'Log Out')]");
+    By searchFieldLocator = By.xpath("//*[@data-purpose='search-input' or @class='udlite-text-input udlite-text-input-small udlite-text-sm udlite-search-form-autocomplete-input js-header-search-field']");
+    By searchFieldBtnLocator = By.xpath("(//*[@class='input-group-btn' or @type='submit'])[1]");
+    By categoriesDropdownLocator = By.xpath("//*[@data-purpose='browse-courses-link' or @class='header--browse-nav--82GLV popover--popover--t3rNO popover--popover-hover--14ngr']");
+    By mainCategoryLocator = By.xpath("//*[@class='menu__link' or @class='udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-text-sm udlite-block-list-item-neutral']");
 
 
     public void openHomePage(){

@@ -9,7 +9,7 @@ public class SearchTest extends TestBase {
     public void Search() {
 
         homePage.openHomePage();
-        Assert.assertEquals(homePage.checkSearchField(), "Что бы вы хотели изучить?");
+        Assert.assertEquals(homePage.checkSearchField(), "Search for anything");
         homePage.enterTextInField(utils.getSearchText());
         homePage.clickSearchFieldBtn();
         Assert.assertTrue(searchResultsPage.checkResults().contains(utils.getSearchText().toLowerCase()));

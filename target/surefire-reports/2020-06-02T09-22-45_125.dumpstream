@@ -1,4 +1,4 @@
-# Created at 2020-06-01T11:56:05.164
+# Created at 2020-06-02T09:22:45.401
 Boot Manifest-JAR contains absolute paths in classpath 'D:\Install\com.udemy\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 

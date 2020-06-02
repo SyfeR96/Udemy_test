@@ -34,4 +34,15 @@
       </class> <!-- com.udemy.CategoriesMenuTest -->
     </classes>
   </test> <!-- Categories Menu Test(failed) -->
+  <test thread-count="5" verbose="0" name="Search Test(failed)">
+    <classes>
+      <class name="com.udemy.SearchTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="Search"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.udemy.SearchTest -->
+    </classes>
+  </test> <!-- Search Test(failed) -->
 </suite> <!-- Failed suite [UdamyWeb] -->
