@@ -10,12 +10,12 @@ public class RegistrationTest extends TestBase {
 
         homePage.openHomePage();
         registrationPopup.openRegisterPopup();
-        Assert.assertEquals(registrationPopup.checkRegisterHeader(), "Sign Up and Start Learning!");
-        registrationPopup.enterName("Jacob");
+        Assert.assertEquals(registrationPopup.getRegisterHeader(), "Sign Up and Start Learning!");
+        registrationPopup.enterName(utils.getName());
         registrationPopup.enterEmail(utils.getEmailForRegistration());
-        registrationPopup.enterPassword("Qwerty1234");
+        registrationPopup.enterPassword(utils.getPassword());
         registrationPopup.clickRegisterBtn();
-        homePage.getProfileName();
+        homePage.openProfileMenu();
         homePage.clickLogout();
     }
 }

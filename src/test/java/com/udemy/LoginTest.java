@@ -12,9 +12,8 @@ public class LoginTest extends TestBase {
         driver.manage().addCookie(cookie);
         driver.navigate().refresh();
 
-        homePage.getProfileName();
+        homePage.openProfileMenu();
 
         Assert.assertEquals(loginPopup.checkUserName(), "Jason");
-        homePage.clickLogout();
     }
 }

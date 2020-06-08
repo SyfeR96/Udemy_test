@@ -23,7 +23,7 @@
         <classes>
             <class name="com.udemy.CategoriesMenuTest">
                 <methods>
-                    <include name="getCategories"/>
+                    <include name="checkMainCategories"/>
                 </methods>
             </class>
         </classes>

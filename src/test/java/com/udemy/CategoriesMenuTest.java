@@ -6,7 +6,7 @@ import static com.udemy.constants.BaseConts.MAIN_CATEGORIES;
 
 public class CategoriesMenuTest extends TestBase {
     @Test(description = "Testing of categories in the \"Categories\" menu")
-    public void getCategories() {
+    public void checkMainCategories() {
 
         homePage.openHomePage();
 

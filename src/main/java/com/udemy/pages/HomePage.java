@@ -32,7 +32,7 @@ public class HomePage {
         driver.get("https://www.udemy.com/");
     }
 
-    public void getProfileName() {
+    public void openProfileMenu() {
         wait.until(ExpectedConditions.elementToBeClickable(userProfileLocator));
         Actions builder = new Actions(driver);
         WebElement userProfile = driver.findElement(userProfileLocator);

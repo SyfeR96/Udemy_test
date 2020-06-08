@@ -17,7 +17,7 @@ public class RegistrationPopup {
     }
 
     By registerBtnLocator = By.xpath("//*[@data-purpose='header-signup' or @class='udlite-btn udlite-btn-small udlite-btn-primary udlite-heading-sm']");
-    By checkSignUpHeaderLocator = By.xpath("//*[@class=' loginbox-v4__header loginbox-v4__header--signup']");
+    By signUpHeaderLocator = By.xpath("//*[@class=' loginbox-v4__header loginbox-v4__header--signup']");
     By nameFieldLocator = By.id("id_fullname");
     By randomEmailLocator = By.xpath("//*[@type='email']");
     By passwordFieldLocator = By.id("password");
@@ -32,9 +32,9 @@ public class RegistrationPopup {
     }
 
 
-    public String checkRegisterHeader() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(checkSignUpHeaderLocator));
-        WebElement checkSignUpHeader = driver.findElement(checkSignUpHeaderLocator);
+    public String getRegisterHeader() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(signUpHeaderLocator));
+        WebElement checkSignUpHeader = driver.findElement(signUpHeaderLocator);
         return checkSignUpHeader.getText();
     }
 
@@ -57,7 +57,9 @@ public class RegistrationPopup {
     }
 
     public void clickRegisterBtn(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(signUpBtnLocator));
         WebElement signUpBtn = driver.findElement(signUpBtnLocator);
         signUpBtn.click();
+
     }
 }
