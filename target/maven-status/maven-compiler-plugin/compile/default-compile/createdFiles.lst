@@ -1,6 +1,10 @@
+com\udemy\models\User.class
 com\udemy\pages\SearchResultsPage.class
 com\udemy\constants\BaseConts.class
+com\udemy\pages\BusinessPage.class
 com\udemy\pages\LoginPopup.class
 com\udemy\pages\HomePage.class
+com\udemy\pages\TeachPage.class
 com\udemy\pages\RegistrationPopup.class
-Config\Utils.class
+com\udemy\config\Utils.class
+com\udemy\testdata\UserData.class

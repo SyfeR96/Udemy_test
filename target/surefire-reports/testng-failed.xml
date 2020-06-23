@@ -27,9 +27,9 @@
     <classes>
       <class name="com.udemy.CategoriesMenuTest">
         <methods>
-          <include name="getCategories"/>
           <include name="openBrowser"/>
           <include name="closeBrowser"/>
+          <include name="checkMainCategories"/>
         </methods>
       </class> <!-- com.udemy.CategoriesMenuTest -->
     </classes>

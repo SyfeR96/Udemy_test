@@ -1,7 +1,10 @@
 package com.udemy;
 
+import com.udemy.pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static com.udemy.testdata.UserData.newUser;
 
 public class RegistrationTest extends TestBase {
 
@@ -11,11 +14,13 @@ public class RegistrationTest extends TestBase {
         homePage.openHomePage();
         registrationPopup.openRegisterPopup();
         Assert.assertEquals(registrationPopup.getRegisterHeader(), "Sign Up and Start Learning!");
-        registrationPopup.enterName(utils.getName());
-        registrationPopup.enterEmail(utils.getEmailForRegistration());
-        registrationPopup.enterPassword(utils.getPassword());
+        registrationPopup.enterName(newUser.getName());
+        registrationPopup.enterEmail(newUser.getEmailForRegister());
+        registrationPopup.enterPassword(newUser.getPassword());
         registrationPopup.clickRegisterBtn();
         homePage.openProfileMenu();
         homePage.clickLogout();
+    //    Assert.assertEquals(homePage.checkLogoutAlert(), utils.getLogoutAlertText());
+
     }
 }

@@ -26,7 +26,8 @@ public class HomePage {
     By searchFieldBtnLocator = By.xpath("(//*[@class='input-group-btn' or @type='submit'])[1]");
     By categoriesDropdownLocator = By.xpath("//*[@data-purpose='browse-courses-link' or @class='header--browse-nav--82GLV popover--popover--t3rNO popover--popover-hover--14ngr']");
     By mainCategoryLocator = By.xpath("//*[@class='menu__link' or @class='udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-text-sm udlite-block-list-item-neutral']");
-
+    By logoutAlertLocator = By.xpath("//*[@class='with-icon alert alert-success']");
+    By businessLinkLocator = By.xpath("//*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr']");
 
     public void openHomePage(){
         driver.get("https://www.udemy.com/");
@@ -40,6 +41,7 @@ public class HomePage {
     }
 
     public void clickLogout() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(logoutBtnLocator));
         WebElement logoutBtn = driver.findElement(logoutBtnLocator);
         logoutBtn.click();
     }
@@ -76,6 +78,19 @@ public class HomePage {
         return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(mainCategoryLocator))
                 .stream().map(WebElement::getText).collect(Collectors.toList());
     }
+
+    public void clickBusinessLink() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(businessLinkLocator));
+        WebElement businessLink = driver.findElement(businessLinkLocator);
+        businessLink.click();
+    }
+
+    public String checkLogoutAlert() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(logoutAlertLocator));
+        WebElement logoutAlert = driver.findElement(logoutAlertLocator);
+        return logoutAlert.getText();
+    }
+
 
 }
 

@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 23.53 s <<< FAILURE! - in TestSuite
-com.udemy.RegistrationTest.registrationWithValidCredentials  Time elapsed: 2.419 s  <<< FAILURE!
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 23.978 s <<< FAILURE! - in TestSuite
+com.udemy.RegistrationTest.registrationWithValidCredentials  Time elapsed: 3.057 s  <<< FAILURE!
 java.lang.AssertionError: expected [Sign Up and Start Learning!] but found [Зарегистрируйтесь и начните обучение!]
-	at com.udemy.RegistrationTest.registrationWithValidCredentials(RegistrationTest.java:13)
+	at com.udemy.RegistrationTest.registrationWithValidCredentials(RegistrationTest.java:16)
 
-com.udemy.LoginTest.loginWithUsingCookie  Time elapsed: 1.82 s  <<< FAILURE!
+com.udemy.LoginTest.loginWithUsingCookie  Time elapsed: 1.469 s  <<< FAILURE!
 java.lang.AssertionError: expected [Log In] but found [Войти]
 	at com.udemy.LoginTest.loginWithUsingCookie(LoginTest.java:10)
 
-com.udemy.CategoriesMenuTest.getCategories  Time elapsed: 2.317 s  <<< FAILURE!
+com.udemy.CategoriesMenuTest.checkMainCategories  Time elapsed: 2.38 s  <<< FAILURE!
 java.lang.AssertionError: Lists differ at element [0]: Development != Разработка expected [Development] but found [Разработка]
-	at com.udemy.CategoriesMenuTest.getCategories(CategoriesMenuTest.java:15)
+	at com.udemy.CategoriesMenuTest.checkMainCategories(CategoriesMenuTest.java:15)
 
-com.udemy.SearchTest.Search  Time elapsed: 2.034 s  <<< FAILURE!
+com.udemy.SearchTest.Search  Time elapsed: 1.581 s  <<< FAILURE!
 java.lang.AssertionError: expected [Search for anything] but found [Ищите что угодно]
 	at com.udemy.SearchTest.Search(SearchTest.java:12)
 

@@ -3,3 +3,4 @@ com\udemy\TestBase.class
 com\udemy\LoginTest.class
 com\udemy\SearchTest.class
 com\udemy\CategoriesMenuTest.class
+com\udemy\CheckLinksTest.class

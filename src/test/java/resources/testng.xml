@@ -37,4 +37,13 @@
             </class>
         </classes>
     </test>
+    <test name="Check Business and Teach Links Test">
+        <classes>
+            <class name="com.udemy.CheckLinksTest">
+                <methods>
+                    <include name="Search"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
