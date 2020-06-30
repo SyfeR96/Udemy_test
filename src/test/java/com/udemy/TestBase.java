@@ -24,6 +24,7 @@ public class TestBase {
     SearchResultsPage searchResultsPage;
     BusinessPage businessPage;
     TeachPage teachPage;
+    ProfilePage profilePage;
 
     @BeforeMethod(description = "Open Browser")
     public void openBrowser() {
@@ -48,6 +49,7 @@ public class TestBase {
         searchResultsPage = new SearchResultsPage(driver, wait);
         businessPage = new BusinessPage(driver, wait);
         teachPage = new TeachPage(driver, wait);
+        profilePage = new ProfilePage(driver, wait);
 
     }
 

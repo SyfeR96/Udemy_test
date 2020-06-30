@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-UdamyWeb">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-UdamyWeb" title="com.udemy.SearchTest" hash-for-method="Search">Search</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-UdamyWeb" title="com.udemy.CheckLinksTest" hash-for-method="checkLinks">checkLinks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,21 +135,47 @@
           <div class="suite-UdamyWeb-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.udemy.SearchTest</span>
+              <span class="class-name">com.udemy.CheckLinksTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Search">
-                  </a> <!-- Search -->
-                  <span class="method-name">Search</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Search for anything] but found [Ищите что угодно]
-	at com.udemy.SearchTest.Search(SearchTest.java:12)
+                  <a name="checkLinks">
+                  </a> <!-- checkLinks -->
+                  <span class="method-name">checkLinks</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.udemy.pages.HomePage.clickBusinessLink(HomePage.java:102)
+	at com.udemy.CheckLinksTest.checkLinks(CheckLinksTest.java:10)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 36 stack frames
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;]&quot;}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-5989GJV&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SyfeR\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e37ca30f2283efd0f45003aab4b2ce72
+*** Element info: {Using=xpath, value=//*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Search some text)                  </em>
+(Check Business and Teach Links)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,7 +287,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.udemy.SearchTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Search&quot;/&gt;
+          &lt;include name=&quot;searchSome&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.udemy.SearchTest --&gt;
     &lt;/classes&gt;
@@ -270,7 +296,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.udemy.CheckLinksTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Search&quot;/&gt;
+          &lt;include name=&quot;checkLinks&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.udemy.CheckLinksTest --&gt;
     &lt;/classes&gt;
@@ -326,26 +352,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'registrationWithValidCredentials')
-data.setCell(0, 2, 'com.udemy.RegistrationTest')
-data.setCell(0, 3, 3053);
+data.setCell(0, 1, 'checkLinks')
+data.setCell(0, 2, 'com.udemy.CheckLinksTest')
+data.setCell(0, 3, 12169);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkMainCategories')
-data.setCell(1, 2, 'com.udemy.CategoriesMenuTest')
-data.setCell(1, 3, 2383);
+data.setCell(1, 1, 'registrationWithValidCredentials')
+data.setCell(1, 2, 'com.udemy.RegistrationTest')
+data.setCell(1, 3, 3687);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Search')
-data.setCell(2, 2, 'com.udemy.SearchTest')
-data.setCell(2, 3, 1585);
+data.setCell(2, 1, 'checkMainCategories')
+data.setCell(2, 2, 'com.udemy.CategoriesMenuTest')
+data.setCell(2, 3, 2331);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithUsingCookie')
 data.setCell(3, 2, 'com.udemy.LoginTest')
-data.setCell(3, 3, 1473);
+data.setCell(3, 3, 2049);
 window.suiteTableData['UdamyWeb']= { tableData: data, tableDiv: 'times-div-UdamyWeb'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-UdamyWeb">
               </div> <!-- times-div-UdamyWeb -->
             </div> <!-- times-div -->
@@ -364,9 +390,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.udemy.CheckLinksTest</span>
+              <span class="ignored-class-name">com.udemy.SearchTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">checkLinks</span>
+                <span class="ignored-method-name">Search</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -387,62 +413,62 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">registrationWithValidCredentials</span>
-                <span class="method-start">3536 ms</span>
+                <span class="method-start">3601 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">6593 ms</span>
+                <span class="method-start">7292 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.udemy.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">7182 ms</span>
+                <span class="method-start">8118 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginWithUsingCookie</span>
-                <span class="method-start">10138 ms</span>
+                <span class="method-start">11072 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">11611 ms</span>
+                <span class="method-start">13121 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.udemy.CategoriesMenuTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">12185 ms</span>
+                <span class="method-start">13691 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkMainCategories</span>
-                <span class="method-start">15149 ms</span>
+                <span class="method-start">16635 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">17532 ms</span>
+                <span class="method-start">18966 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.udemy.SearchTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.udemy.CheckLinksTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">18478 ms</span>
+                <span class="method-start">19561 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Search</span>
-                <span class="method-start">21431 ms</span>
+                <span class="method-name">checkLinks</span>
+                <span class="method-start">22501 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">23016 ms</span>
+                <span class="method-start">34671 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

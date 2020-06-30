@@ -8,3 +8,4 @@ com\udemy\pages\TeachPage.class
 com\udemy\pages\RegistrationPopup.class
 com\udemy\config\Utils.class
 com\udemy\testdata\UserData.class
+com\udemy\pages\ProfilePage.class

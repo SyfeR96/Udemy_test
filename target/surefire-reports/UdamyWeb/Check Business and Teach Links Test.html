@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Check Business and Teach Links Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 23 08:54:02 EEST 2020</td>
+<td>Started on:</td><td>Tue Jun 30 09:27:21 EEST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (0 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15677 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,42 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.udemy.SearchTest.Search()'><b>Search</b><br>Test class: com.udemy.SearchTest<br>Test method: Search some text</td>
-<td><div><pre>java.lang.AssertionError: expected [Search for anything] but found [Ищите что угодно]
-	at com.udemy.SearchTest.Search(SearchTest.java:12)
+<td title='com.udemy.CheckLinksTest.checkLinks()'><b>checkLinks</b><br>Test class: com.udemy.CheckLinksTest<br>Test method: Check Business and Teach Links</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.udemy.pages.HomePage.clickBusinessLink(HomePage.java:102)
+	at com.udemy.CheckLinksTest.checkLinks(CheckLinksTest.java:10)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace781091365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace781091365'><pre>java.lang.AssertionError: expected [Search for anything] but found [Ищите что угодно]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at com.udemy.SearchTest.Search(SearchTest.java:12)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;]&quot;}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-5989GJV&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SyfeR\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e37ca30f2283efd0f45003aab4b2ce72
+*** Element info: {Using=xpath, value=//*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace588449070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace588449070'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.udemy.pages.HomePage.clickBusinessLink(HomePage.java:102)
+	at com.udemy.CheckLinksTest.checkLinks(CheckLinksTest.java:10)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,16 +143,42 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;]&quot;}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-5989GJV&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SyfeR\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e37ca30f2283efd0f45003aab4b2ce72
+*** Element info: {Using=xpath, value=//*[@class=&apos;dropdown--ufb zero-state dropdown--open-on-hover dropdown&apos; or @class=&apos;header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
 </pre></div></td>
-<td>1</td>
-<td>com.udemy.SearchTest@4232c52b</td></tr>
+<td>12</td>
+<td>com.udemy.CheckLinksTest@7a1ebcd8</td></tr>
 <tr>
 <td title='com.udemy.CategoriesMenuTest.checkMainCategories()'><b>checkMainCategories</b><br>Test class: com.udemy.CategoriesMenuTest<br>Test method: Testing of categories in the "Categories" menu</td>
 <td><div><pre>java.lang.AssertionError: Lists differ at element [0]: Development != Разработка expected [Development] but found [Разработка]
 	at com.udemy.CategoriesMenuTest.checkMainCategories(CategoriesMenuTest.java:15)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116289363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace116289363'><pre>java.lang.AssertionError: Lists differ at element [0]: Development != Разработка expected [Development] but found [Разработка]
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961595039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961595039'><pre>java.lang.AssertionError: Lists differ at element [0]: Development != Разработка expected [Development] but found [Разработка]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:1033)
@@ -174,8 +224,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected [Log In] but found [Войти]
 	at com.udemy.LoginTest.loginWithUsingCookie(LoginTest.java:10)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1360518503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1360518503'><pre>java.lang.AssertionError: expected [Log In] but found [Войти]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1461474945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1461474945'><pre>java.lang.AssertionError: expected [Log In] but found [Войти]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -215,15 +265,15 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
-<td>1</td>
+<td>2</td>
 <td>com.udemy.LoginTest@27a8c74e</td></tr>
 <tr>
 <td title='com.udemy.RegistrationTest.registrationWithValidCredentials()'><b>registrationWithValidCredentials</b><br>Test class: com.udemy.RegistrationTest<br>Test method: Registration with valid credential</td>
 <td><div><pre>java.lang.AssertionError: expected [Sign Up and Start Learning!] but found [Зарегистрируйтесь и начните обучение!]
 	at com.udemy.RegistrationTest.registrationWithValidCredentials(RegistrationTest.java:16)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515809288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace515809288'><pre>java.lang.AssertionError: expected [Sign Up and Start Learning!] but found [Зарегистрируйтесь и начните обучение!]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2133344792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2133344792'><pre>java.lang.AssertionError: expected [Sign Up and Start Learning!] but found [Зарегистрируйтесь и начните обучение!]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)

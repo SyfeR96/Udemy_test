@@ -1,20 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 23.978 s <<< FAILURE! - in TestSuite
-com.udemy.RegistrationTest.registrationWithValidCredentials  Time elapsed: 3.057 s  <<< FAILURE!
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 35.652 s <<< FAILURE! - in TestSuite
+com.udemy.RegistrationTest.registrationWithValidCredentials  Time elapsed: 3.691 s  <<< FAILURE!
 java.lang.AssertionError: expected [Sign Up and Start Learning!] but found [Зарегистрируйтесь и начните обучение!]
 	at com.udemy.RegistrationTest.registrationWithValidCredentials(RegistrationTest.java:16)
 
-com.udemy.LoginTest.loginWithUsingCookie  Time elapsed: 1.469 s  <<< FAILURE!
+com.udemy.LoginTest.loginWithUsingCookie  Time elapsed: 2.045 s  <<< FAILURE!
 java.lang.AssertionError: expected [Log In] but found [Войти]
 	at com.udemy.LoginTest.loginWithUsingCookie(LoginTest.java:10)
 
-com.udemy.CategoriesMenuTest.checkMainCategories  Time elapsed: 2.38 s  <<< FAILURE!
+com.udemy.CategoriesMenuTest.checkMainCategories  Time elapsed: 2.327 s  <<< FAILURE!
 java.lang.AssertionError: Lists differ at element [0]: Development != Разработка expected [Development] but found [Разработка]
 	at com.udemy.CategoriesMenuTest.checkMainCategories(CategoriesMenuTest.java:15)
 
-com.udemy.SearchTest.Search  Time elapsed: 1.581 s  <<< FAILURE!
-java.lang.AssertionError: expected [Search for anything] but found [Ищите что угодно]
-	at com.udemy.SearchTest.Search(SearchTest.java:12)
+com.udemy.CheckLinksTest.checkLinks  Time elapsed: 12.166 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr'] (tried for 10 second(s) with 500 milliseconds interval)
+	at com.udemy.CheckLinksTest.checkLinks(CheckLinksTest.java:10)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5989GJV', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SyfeR\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e37ca30f2283efd0f45003aab4b2ce72
+*** Element info: {Using=xpath, value=//*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr']}
+	at com.udemy.CheckLinksTest.checkLinks(CheckLinksTest.java:10)
 

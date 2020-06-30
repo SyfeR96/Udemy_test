@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="4" ignored="1" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="UdamyWeb" duration-ms="23605" started-at="2020-06-23T08:53:39 EEST" finished-at="2020-06-23T08:54:02 EEST">
+  <suite name="UdamyWeb" duration-ms="35259" started-at="2020-06-30T09:27:02 EEST" finished-at="2020-06-30T09:27:37 EEST">
     <groups>
     </groups>
-    <test name="Registration tests" duration-ms="7177" started-at="2020-06-23T08:53:39 EEST" finished-at="2020-06-23T08:53:46 EEST">
+    <test name="Registration tests" duration-ms="8113" started-at="2020-06-30T09:27:02 EEST" finished-at="2020-06-30T09:27:10 EEST">
       <class name="com.udemy.RegistrationTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.RegistrationTest@26aa12dd]" name="openBrowser" is-config="true" duration-ms="3535" started-at="2020-06-23T08:53:39 EEST" description="Open Browser" finished-at="2020-06-23T08:53:42 EEST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.RegistrationTest@26aa12dd]" name="openBrowser" is-config="true" duration-ms="3600" started-at="2020-06-30T09:27:02 EEST" description="Open Browser" finished-at="2020-06-30T09:27:05 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="registrationWithValidCredentials()[pri:0, instance:com.udemy.RegistrationTest@26aa12dd]" name="registrationWithValidCredentials" duration-ms="3053" started-at="2020-06-23T08:53:42 EEST" description="Registration with valid credential" finished-at="2020-06-23T08:53:45 EEST">
+        <test-method status="FAIL" signature="registrationWithValidCredentials()[pri:0, instance:com.udemy.RegistrationTest@26aa12dd]" name="registrationWithValidCredentials" duration-ms="3687" started-at="2020-06-30T09:27:05 EEST" description="Registration with valid credential" finished-at="2020-06-30T09:27:09 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Sign Up and Start Learning!] but found [Зарегистрируйтесь и начните обучение!]]]>
@@ -62,19 +62,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithValidCredentials -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.RegistrationTest@26aa12dd]" name="closeBrowser" is-config="true" duration-ms="565" started-at="2020-06-23T08:53:45 EEST" description="Close Browser" finished-at="2020-06-23T08:53:46 EEST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.RegistrationTest@26aa12dd]" name="closeBrowser" is-config="true" duration-ms="799" started-at="2020-06-30T09:27:09 EEST" description="Close Browser" finished-at="2020-06-30T09:27:10 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.udemy.RegistrationTest -->
     </test> <!-- Registration tests -->
-    <test name="Login tests" duration-ms="4993" started-at="2020-06-23T08:53:46 EEST" finished-at="2020-06-23T08:53:51 EEST">
+    <test name="Login tests" duration-ms="5563" started-at="2020-06-30T09:27:10 EEST" finished-at="2020-06-30T09:27:16 EEST">
       <class name="com.udemy.LoginTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.LoginTest@27a8c74e]" name="openBrowser" is-config="true" duration-ms="2956" started-at="2020-06-23T08:53:46 EEST" description="Open Browser" finished-at="2020-06-23T08:53:49 EEST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.LoginTest@27a8c74e]" name="openBrowser" is-config="true" duration-ms="2954" started-at="2020-06-30T09:27:10 EEST" description="Open Browser" finished-at="2020-06-30T09:27:13 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="loginWithUsingCookie()[pri:0, instance:com.udemy.LoginTest@27a8c74e]" name="loginWithUsingCookie" duration-ms="1473" started-at="2020-06-23T08:53:49 EEST" description="Login Test" finished-at="2020-06-23T08:53:50 EEST">
+        <test-method status="FAIL" signature="loginWithUsingCookie()[pri:0, instance:com.udemy.LoginTest@27a8c74e]" name="loginWithUsingCookie" duration-ms="2049" started-at="2020-06-30T09:27:13 EEST" description="Login Test" finished-at="2020-06-30T09:27:15 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Log In] but found [Войти]]]>
@@ -125,19 +125,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithUsingCookie -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.LoginTest@27a8c74e]" name="closeBrowser" is-config="true" duration-ms="564" started-at="2020-06-23T08:53:50 EEST" description="Close Browser" finished-at="2020-06-23T08:53:51 EEST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.LoginTest@27a8c74e]" name="closeBrowser" is-config="true" duration-ms="560" started-at="2020-06-30T09:27:15 EEST" description="Close Browser" finished-at="2020-06-30T09:27:16 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.udemy.LoginTest -->
     </test> <!-- Login tests -->
-    <test name="Categories Menu Test" duration-ms="6284" started-at="2020-06-23T08:53:51 EEST" finished-at="2020-06-23T08:53:57 EEST">
+    <test name="Categories Menu Test" duration-ms="5857" started-at="2020-06-30T09:27:16 EEST" finished-at="2020-06-30T09:27:21 EEST">
       <class name="com.udemy.CategoriesMenuTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.CategoriesMenuTest@1f57539]" name="openBrowser" is-config="true" duration-ms="2963" started-at="2020-06-23T08:53:51 EEST" description="Open Browser" finished-at="2020-06-23T08:53:54 EEST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.CategoriesMenuTest@1f57539]" name="openBrowser" is-config="true" duration-ms="2944" started-at="2020-06-30T09:27:16 EEST" description="Open Browser" finished-at="2020-06-30T09:27:18 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="checkMainCategories()[pri:0, instance:com.udemy.CategoriesMenuTest@1f57539]" name="checkMainCategories" duration-ms="2383" started-at="2020-06-23T08:53:54 EEST" description="Testing of categories in the &quot;Categories&quot; menu" finished-at="2020-06-23T08:53:56 EEST">
+        <test-method status="FAIL" signature="checkMainCategories()[pri:0, instance:com.udemy.CategoriesMenuTest@1f57539]" name="checkMainCategories" duration-ms="2331" started-at="2020-06-30T09:27:18 EEST" description="Testing of categories in the &quot;Categories&quot; menu" finished-at="2020-06-30T09:27:21 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Lists differ at element [0]: Development != Разработка expected [Development] but found [Разработка]]]>
@@ -187,31 +187,31 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkMainCategories -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.CategoriesMenuTest@1f57539]" name="closeBrowser" is-config="true" duration-ms="937" started-at="2020-06-23T08:53:56 EEST" description="Close Browser" finished-at="2020-06-23T08:53:57 EEST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.CategoriesMenuTest@1f57539]" name="closeBrowser" is-config="true" duration-ms="582" started-at="2020-06-30T09:27:21 EEST" description="Close Browser" finished-at="2020-06-30T09:27:21 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.udemy.CategoriesMenuTest -->
     </test> <!-- Categories Menu Test -->
-    <test name="Search Test" duration-ms="5103" started-at="2020-06-23T08:53:57 EEST" finished-at="2020-06-23T08:54:02 EEST">
-      <class name="com.udemy.SearchTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.SearchTest@4232c52b]" name="openBrowser" is-config="true" duration-ms="2953" started-at="2020-06-23T08:53:57 EEST" description="Open Browser" finished-at="2020-06-23T08:54:00 EEST">
+    <test name="Search Test" duration-ms="0" started-at="2020-06-30T09:27:21 EEST" finished-at="2020-06-30T09:27:21 EEST">
+    </test> <!-- Search Test -->
+    <test name="Check Business and Teach Links Test" duration-ms="15677" started-at="2020-06-30T09:27:21 EEST" finished-at="2020-06-30T09:27:37 EEST">
+      <class name="com.udemy.CheckLinksTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.udemy.CheckLinksTest@7a1ebcd8]" name="openBrowser" is-config="true" duration-ms="2940" started-at="2020-06-30T09:27:21 EEST" description="Open Browser" finished-at="2020-06-30T09:27:24 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="Search()[pri:0, instance:com.udemy.SearchTest@4232c52b]" name="Search" duration-ms="1585" started-at="2020-06-23T08:54:00 EEST" description="Search some text" finished-at="2020-06-23T08:54:02 EEST">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="checkLinks()[pri:0, instance:com.udemy.CheckLinksTest@7a1ebcd8]" name="checkLinks" duration-ms="12169" started-at="2020-06-30T09:27:24 EEST" description="Check Business and Teach Links" finished-at="2020-06-30T09:27:37 EEST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [Search for anything] but found [Ищите что угодно]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr'] (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Search for anything] but found [Ищите что угодно]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at com.udemy.SearchTest.Search(SearchTest.java:12)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr'] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.udemy.pages.HomePage.clickBusinessLink(HomePage.java:102)
+at com.udemy.CheckLinksTest.checkLinks(CheckLinksTest.java:10)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -244,19 +244,43 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5989GJV', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SyfeR\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e37ca30f2283efd0f45003aab4b2ce72
+*** Element info: {Using=xpath, value=//*[@class='dropdown--ufb zero-state dropdown--open-on-hover dropdown' or @class='header--gap-sm--2PR4A header--try-ufb--1kzro popover--popover--t3rNO popover--popover-hover--14ngr']}
+at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Search -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.SearchTest@4232c52b]" name="closeBrowser" is-config="true" duration-ms="565" started-at="2020-06-23T08:54:02 EEST" description="Close Browser" finished-at="2020-06-23T08:54:02 EEST">
+        </test-method> <!-- checkLinks -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.udemy.CheckLinksTest@7a1ebcd8]" name="closeBrowser" is-config="true" duration-ms="567" started-at="2020-06-30T09:27:37 EEST" description="Close Browser" finished-at="2020-06-30T09:27:37 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.udemy.SearchTest -->
-    </test> <!-- Search Test -->
-    <test name="Check Business and Teach Links Test" duration-ms="0" started-at="2020-06-23T08:54:02 EEST" finished-at="2020-06-23T08:54:02 EEST">
+      </class> <!-- com.udemy.CheckLinksTest -->
     </test> <!-- Check Business and Teach Links Test -->
   </suite> <!-- UdamyWeb -->
 </testng-results>

@@ -34,15 +34,15 @@
       </class> <!-- com.udemy.CategoriesMenuTest -->
     </classes>
   </test> <!-- Categories Menu Test(failed) -->
-  <test thread-count="5" verbose="0" name="Search Test(failed)">
+  <test thread-count="5" verbose="0" name="Check Business and Teach Links Test(failed)">
     <classes>
-      <class name="com.udemy.SearchTest">
+      <class name="com.udemy.CheckLinksTest">
         <methods>
           <include name="openBrowser"/>
-          <include name="Search"/>
           <include name="closeBrowser"/>
+          <include name="checkLinks"/>
         </methods>
-      </class> <!-- com.udemy.SearchTest -->
+      </class> <!-- com.udemy.CheckLinksTest -->
     </classes>
-  </test> <!-- Search Test(failed) -->
+  </test> <!-- Check Business and Teach Links Test(failed) -->
 </suite> <!-- Failed suite [UdamyWeb] -->
